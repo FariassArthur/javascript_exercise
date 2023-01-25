@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, black, purple);
+    color: #FFF;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+#tasks-container {
+    max-width: 50rem;
+    margin: auto auto;
+/*     border: 1px solid red; */
+    padding: 20px;
+}
+
+/*tasks*/
+
+#add-tasks {
+    position: relative;
+}
+
+#add-tasks input {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background-color: #FFF;
+    color: gray;
+    padding: 0.5rem;
+    font-size: 18px;
+    width: 80%;
+}
+
+#add-tasks input:placeholder {
+    outline: none;
+}
+
+#add-button {
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: .5s;
+    height: 45px;
+    width: 45px;
+}
+
+/*task-container*/
+
+.task-box {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+/*     border: 1px solid red; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.task-box {
+    position: relative;
+    text-align: left;
+    height: 45px;
+
+    line-height: 50px;
+
+    color: gray;
+    transition: 0.5s;
+
+    margin-bottom: 10px;
+
+    background: #FFF;
+    display: flex;
+/*     border: 1px solid red; */
+}
+
+.task-title {
+    width: 90%;
+/*     border: 1px red solid; */
+}
+
+#task-list ion-icon {
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.done-btn {
+    margin-right: 8px;
+    color: green;
+    margin-left: 2px;
+}
+.done-btn:hover {
+    color: white;
+    background-color: green;
+}
+
+.remove-btn {
+    color: red;
+    right: 0;
+}
+.remove-btn:hover {
+    color: white;
+    background-color: red;
+}
+
+/*Pra usar depois do JavaScript*/
+
+.hide {
+    display: none;
+}
+
+#task-list li.done{
+    background-color: gray;
+    color: #FFF;
+    text-decoration: line-through;
+}
